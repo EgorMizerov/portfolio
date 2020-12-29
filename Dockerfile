@@ -6,5 +6,5 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app/
 
 RUN go mod download
-EXPOSE 80
+EXPOSE 8080
 ENTRYPOINT go run cmd/main.go

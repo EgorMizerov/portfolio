@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&family=Trocchi&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<img id="menu" src="./images/dest/menu.png" alt="">
+<div class="menu__navbar">
+    <div class="menu__navbar-item">Мои работы</div>
+    <div class="menu__navbar-item">Публикации</div>
+    <div class="menu__navbar-item">Обо мне</div>
+</div>
+<header>
+    <div class="header">
+        <div class="logo"><a href="/">EgorMizerov</a></div>
+        <div class="nav">
+            <div id="scroll-works" class="nav__item">Мои работы</div>
+            <div id="scroll-pub" class="nav__item">Публикации</div>
+            <div id="scroll-about" class="nav__item">Обо мне</div>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+<div class="container">
+    <div class="works">
+        <div class="title">Мои работы</div>
+        <div class="subtitle">Разрабатываю Rest API и микросервисы на Golang. Пишу клиентскую часть на Vue.js</div>
+        <div class="buttons">
+            <button class="btn_active">Все</button>
+            <button>Rest</button>
+            <button>Микросервисы</button>
+            <button>Другое</button>
+        </div>
+        <div class="works_all">
+            <a href=""><div class="works__item">
+                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+                <div class="works__about">
+                    <div class="works__title">Как использовать Docker</div>
+                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
+                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
+                </div>
+            </div></a>
+
+            <a href=""><div class="works__item">
+                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+                <div class="works__about">
+                    <div class="works__title">Микросервисы</div>
+                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
+                    <span class="works__date">29.12.2020</span><span class="works__tag">микросервисы</span>
+                </div>
+            </div></a>
+
+            <a href=""><div class="works__item">
+                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+                <div class="works__about">
+                    <div class="works__title">Rest1</div>
+                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
+                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
+                </div>
+            </div></a>
+
+            <a href=""><div class="works__item">
+                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+                <div class="works__about">
+                    <div class="works__title">Другое</div>
+                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
+                    <span class="works__date">29.12.2020</span><span class="works__tag">другое</span>
+                </div>
+            </div></a>
+
+            <a href=""><div class="works__item">
+                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+                <div class="works__about">
+                    <div class="works__title">Rest2</div>
+                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
+                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
+                </div>
+            </div></a>
+
+            <a href=""><div class="works__item">
+                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+                <div class="works__about">
+                    <div class="works__title">Rest3</div>
+                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
+                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
+                </div>
+            </div></a>
+
+            <a href=""><div class="works__item">
+                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+                <div class="works__about">
+                    <div class="works__title">Rest4</div>
+                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
+                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
+                </div>
+            </div></a>
+
+            <a href=""><div class="works__item">
+                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+                <div class="works__about">
+                    <div class="works__title">Микросервис2</div>
+                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
+                    <span class="works__date">29.12.2020</span><span class="works__tag">Микросервисы</span>
+                </div>
+            </div></a>
+        </div>
+        <button id="works__show-more">Показать ещё</button>
+    </div>
+
+    <div class="publications">
+        <div class="title">Публикации</div>
+        <div class="subtitle">Пишу о разработке и том, что считаю интересным <br>*В разработке...*</div>
+    </div>
+    
+    <div class="about-me">
+        <img src="images/dest/my.jpg" alt="" class="my-photo">
+        <div class="title">Обо мне</div>
+        <div class="about-me__about">
+            <div>Я влюбился в программирование пярмо после школы. Начинал, как и многие с простой вёрстки сайтов,
+            но постепенно переходил к более сложным вещам. <br><br>
+                Моим первым языком программирования был Python. На нём я написал парочку ботов, веб сервер на Django и умудрился поработать на фриланс бирже.
+                <br><br>Я перепробыал кучу языков, таких как, Python, C#, Java, Kotlin, PHP, но в какой-то момент нашёл тот самый. Им оказался Golang.
+                <br><br>Сейчас я работаю в одной из пермских компаний Fullstack разработчиком на Django/Vue.js, но дома изучаю разработку на Golang.
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="copy">EgorMizerov ©</div>
+        <div class="links">
+            <a id="github" href="https://github.com/EgorMizerov"><img src="images/dest/github.png" alt=""></a>
+            <a href="https://t.me/egormizerov" id="telegram"><img src="images/dest/telegram.png" alt=""></a>
+        </div>
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="js/app.min.js"></script>
+</body>
+</html>

@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="../static/app.min.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&family=Trocchi&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- header -->
-<img id="menu" src="./images/dest/menu.png" alt="">
+<img id="menu" src="../static/images/menu.png" alt="">
 <div class="menu__navbar">
     <div class="menu__navbar-item">Мои работы</div>
     <div class="menu__navbar-item">Публикации</div>
@@ -42,77 +42,78 @@
             <button>Другое</button>
         </div>
         <div class="works_all">
-            <a href=""><div class="works__item">
-                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
+            {{range .data}}
+            <a href="{{.Url}}"><div class="works__item">
+                <img src="{{.Img}}" alt="" class="works__item-img">
                 <div class="works__about">
-                    <div class="works__title">Как использовать Docker</div>
-                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
-                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
+                    <div class="works__title">{{.Title}}</div>
+                    <div class="works__desc">{{.Description}}</div>
+                    <span class="works__date">{{.Date}}</span><span class="works__tag">{{.Tag}}</span>
                 </div>
             </div></a>
+            {{end}}
+{{/*            <a href=""><div class="works__item">*/}}
+{{/*                <img src="../static/images/docker.jpg" alt="" class="works__item-img">*/}}
+{{/*                <div class="works__about">*/}}
+{{/*                    <div class="works__title">Микросервисы</div>*/}}
+{{/*                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>*/}}
+{{/*                    <span class="works__date">29.12.2020</span><span class="works__tag">микросервисы</span>*/}}
+{{/*                </div>*/}}
+{{/*            </div></a>*/}}
 
-            <a href=""><div class="works__item">
-                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
-                <div class="works__about">
-                    <div class="works__title">Микросервисы</div>
-                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
-                    <span class="works__date">29.12.2020</span><span class="works__tag">микросервисы</span>
-                </div>
-            </div></a>
+{{/*            <a href=""><div class="works__item">*/}}
+{{/*                <img src="../static/images/docker.jpg" alt="" class="works__item-img">*/}}
+{{/*                <div class="works__about">*/}}
+{{/*                    <div class="works__title">Rest1</div>*/}}
+{{/*                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>*/}}
+{{/*                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>*/}}
+{{/*                </div>*/}}
+{{/*            </div></a>*/}}
 
-            <a href=""><div class="works__item">
-                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
-                <div class="works__about">
-                    <div class="works__title">Rest1</div>
-                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
-                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
-                </div>
-            </div></a>
+{{/*            <a href=""><div class="works__item">*/}}
+{{/*                <img src="../static/images/docker.jpg" alt="" class="works__item-img">*/}}
+{{/*                <div class="works__about">*/}}
+{{/*                    <div class="works__title">Другое</div>*/}}
+{{/*                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>*/}}
+{{/*                    <span class="works__date">29.12.2020</span><span class="works__tag">другое</span>*/}}
+{{/*                </div>*/}}
+{{/*            </div></a>*/}}
 
-            <a href=""><div class="works__item">
-                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
-                <div class="works__about">
-                    <div class="works__title">Другое</div>
-                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
-                    <span class="works__date">29.12.2020</span><span class="works__tag">другое</span>
-                </div>
-            </div></a>
+{{/*            <a href=""><div class="works__item">*/}}
+{{/*                <img src="../static/images/docker.jpg" alt="" class="works__item-img">*/}}
+{{/*                <div class="works__about">*/}}
+{{/*                    <div class="works__title">Rest2</div>*/}}
+{{/*                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>*/}}
+{{/*                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>*/}}
+{{/*                </div>*/}}
+{{/*            </div></a>*/}}
 
-            <a href=""><div class="works__item">
-                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
-                <div class="works__about">
-                    <div class="works__title">Rest2</div>
-                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
-                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
-                </div>
-            </div></a>
+{{/*            <a href=""><div class="works__item">*/}}
+{{/*                <img src="../static/images/docker.jpg" alt="" class="works__item-img">*/}}
+{{/*                <div class="works__about">*/}}
+{{/*                    <div class="works__title">Rest3</div>*/}}
+{{/*                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>*/}}
+{{/*                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>*/}}
+{{/*                </div>*/}}
+{{/*            </div></a>*/}}
 
-            <a href=""><div class="works__item">
-                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
-                <div class="works__about">
-                    <div class="works__title">Rest3</div>
-                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
-                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
-                </div>
-            </div></a>
+{{/*            <a href=""><div class="works__item">*/}}
+{{/*                <img src="../static/images/docker.jpg" alt="" class="works__item-img">*/}}
+{{/*                <div class="works__about">*/}}
+{{/*                    <div class="works__title">Rest4</div>*/}}
+{{/*                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>*/}}
+{{/*                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>*/}}
+{{/*                </div>*/}}
+{{/*            </div></a>*/}}
 
-            <a href=""><div class="works__item">
-                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
-                <div class="works__about">
-                    <div class="works__title">Rest4</div>
-                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
-                    <span class="works__date">29.12.2020</span><span class="works__tag">rest</span>
-                </div>
-            </div></a>
-
-            <a href=""><div class="works__item">
-                <img src="images/dest/docker.jpg" alt="" class="works__item-img">
-                <div class="works__about">
-                    <div class="works__title">Микросервис2</div>
-                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>
-                    <span class="works__date">29.12.2020</span><span class="works__tag">Микросервисы</span>
-                </div>
-            </div></a>
+{{/*            <a href=""><div class="works__item">*/}}
+{{/*                <img src="../static/images/docker.jpg" alt="" class="works__item-img">*/}}
+{{/*                <div class="works__about">*/}}
+{{/*                    <div class="works__title">Микросервис2</div>*/}}
+{{/*                    <div class="works__desc">Учимся использовать docker для контейнеризации проекта</div>*/}}
+{{/*                    <span class="works__date">29.12.2020</span><span class="works__tag">Микросервисы</span>*/}}
+{{/*                </div>*/}}
+{{/*            </div></a>*/}}
         </div>
         <button id="works__show-more">Показать ещё</button>
     </div>
@@ -123,7 +124,7 @@
     </div>
     
     <div class="about-me">
-        <img src="images/dest/my.jpg" alt="" class="my-photo">
+        <img src="../static/images/my.jpg" alt="" class="my-photo">
         <div class="title">Обо мне</div>
         <div class="about-me__about">
             <div>Я влюбился в программирование пярмо после школы. Начинал, как и многие с простой вёрстки сайтов,
@@ -139,12 +140,12 @@
     <div class="footer">
         <div class="copy">EgorMizerov ©</div>
         <div class="links">
-            <a id="github" href="https://github.com/EgorMizerov"><img src="images/dest/github.png" alt=""></a>
-            <a href="https://t.me/egormizerov" id="telegram"><img src="images/dest/telegram.png" alt=""></a>
+            <a id="github" href="https://github.com/EgorMizerov"><img src="../static/images/github.png" alt=""></a>
+            <a href="https://t.me/egormizerov" id="telegram"><img src="../static/images/telegram.png" alt=""></a>
         </div>
     </div>
 </footer>
 <!-- Scripts -->
-<script src="js/app.min.js"></script>
+<script src="../static/app.min.js"></script>
 </body>
 </html>
